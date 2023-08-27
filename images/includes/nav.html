@@ -1,0 +1,30 @@
+<nav class="topnav" id="myTopnav">
+  <a href="index_property.php" class="active">Home</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Listing 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" >
+     <a href="displayallpropertiescards.php">All Properties</a>
+      <a href="displayproperties.php?categoryid=1">Residential</a>
+      <a href="displayproperties.php?categoryid=2">Commercial</a>
+      <a href="displayproperties.php?categoryid=3">Sites</a>
+    </div>
+  </div> 
+  <a href="getcomments.php">Testimonials</a>
+  <a href="aboutus.php">About Us</a>
+  <a href="contact.php">Contact Us</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
